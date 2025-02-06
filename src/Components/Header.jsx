@@ -4,6 +4,20 @@ import { BiShapeTriangle } from "react-icons/bi";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const ScrolltoAbout = (event) => {
+    event.preventDefault();
+    document.getElementById('abo').scrollIntoView({ behavior: 'smooth' });
+  };
+  const Scrolltofeature = (event) => {
+    event.preventDefault();
+    document.getElementById('ser').scrollIntoView({ behavior: 'smooth' });
+  };
+  const scrolltocontact = (event) => {
+    event.preventDefault();
+    document.getElementById('con').scrollIntoView({ behavior: 'smooth' });
+  };
+
+
   return (
     <header className="header">
       <div className="logo"><BiShapeTriangle/>JustWatch </div>
@@ -17,9 +31,9 @@ const Header = () => {
       <nav className={menuOpen ? "nav-links open" : "nav-links"}>
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="/about" onClick={ScrolltoAbout}>About</a></li>
+          <li><a href="/services"  onClick={Scrolltofeature}>feature</a></li>
+          <li><a href="/contact" onClick={scrolltocontact}>Contact</a></li>
         </ul>
       </nav>
     </header>

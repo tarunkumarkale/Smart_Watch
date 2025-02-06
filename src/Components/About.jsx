@@ -4,7 +4,7 @@ import {AboutImg} from "../Constant/Allimages"
 import './About.css'
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="abo">
       <div className="about-image">
         <img src={AboutImg} alt="Smartwatch" />
       </div>

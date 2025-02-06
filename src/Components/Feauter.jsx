@@ -10,7 +10,7 @@ const [featData,setfeatData]=useState(FeaturesData)
 
 
   return (
-    <div className='Feaature'>
+    <div className='Feaature' id='ser'>
       <h1 className='Feaature-headline' > Unlimted Features</h1>
 <div className='Allfeature'>
 {
