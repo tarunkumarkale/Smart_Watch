@@ -127,3 +127,86 @@
 
 /* ////////////////////////////// hero section    */
 
+
+body {
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+/* Left Side - Text */
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #aaa;
+}
+
+/* Button */
+.cta-button {
+  background: yellow;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cta-button:hover {
+  background: gold;
+}
+
+/* Right Side - Image */
+.hero-image {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  margin-left:-20% ;
+  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.2));
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
