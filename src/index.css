@@ -11,12 +11,6 @@
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////header */
-/* 
- /* ✅ Header Styles */
-
-
-
-
 
 
 
@@ -31,14 +25,14 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ✅ Logo */
+
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
   font-family: 'Poppins', sans-serif; /* Adjust to match JustWatch */
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: -1px;
   color: #d4a000; /* Darker Gold */
 }
 
@@ -209,4 +203,98 @@ body {
     max-width: 100%;
     margin-top: 20px;
   }
+}
+
+
+/*             feature section        */
+
+
+/* 
+
+.Feaature{
+background-color: rgb(33, 32, 32);
+
+
+}
+
+.Allfeature{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20%;
+  
+}
+
+
+
+ */
+
+
+ /* Wrapper for all feature cards */
+
+ .Feaature-headline{
+  text-align:center;
+  font-size: xx-large;
+  padding-top: 50px;
+
+} 
+
+.Allfeature {
+  display: flex; /* Flexbox to lay out the cards */
+  flex-wrap: wrap; /* Allows cards to wrap to the next row */
+  justify-content: space-between; /* Distribute cards evenly */
+  gap: 20px; /* Space between the cards */
+  padding: 20px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .Allfeature {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    align-items: center; /* Center the cards */
+  }
+}
+
+/* Feature Card Styling */
+.Feature-card {
+  background-color: #1a1a1a;
+  color: white;
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.Feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.Feature-card-icon {
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: brown;
+  background-color: #333;
+}
+
+.Feature-title-head {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 0;
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+}
+
+.Feature-card p {
+  font-size: 1rem;
+  color: #ccc;
 }

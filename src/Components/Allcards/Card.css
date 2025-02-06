@@ -1,0 +1,72 @@
+/* Wrapper for the entire set of cards */
+.container-wrapper {
+  display: flex; /* Flexbox for row layout by default */
+  flex-wrap: wrap; /* Allows wrapping when necessary */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  justify-content: space-between; /* Distribute cards evenly in the row */
+}
+
+/* Card styling */
+.card {
+  background-color: #1a1a1a; /* Dark background */
+  color: white;
+  width: 300px; /* Card width */
+  padding: 30px; /* Padding inside the card */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; /* Column direction inside the card */
+  align-items: flex-start;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem; /* Icon size */
+  color: brown; /* Icon color */
+  background-color: #333; /* Icon background color */
+}
+
+.title-head {
+  font-size: 1.5rem; /* Title font size */
+  font-weight: bold;
+  margin: 15px 0;
+  color: white; /* Title color */
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .container-wrapper {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center the cards */
+  }
+
+  .card {
+    width: 90%; /* Make cards 90% width on small screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  
+  .title-head {
+    font-size: 1.2rem; /* Adjust title font size */
+  }
+
+  .card p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+}
