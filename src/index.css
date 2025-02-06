@@ -178,13 +178,27 @@ body {
   max-width: 50%;
   display: flex;
   justify-content: center;
+  animation: moveUpDown 2s infinite ease-in-out; /* Apply the animation */
 }
 
 .hero-image img {
   width: 100%;
   max-width: 400px;
-  margin-left:-20% ;
+  margin-left: -20%;
   filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.2));
+}
+
+/* Define the up and down animation */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* Start at the original position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Return to the original position */
+  }
 }
 
 /* Responsive Design */
@@ -298,3 +312,8 @@ background-color: rgb(33, 32, 32);
   font-size: 1rem;
   color: #ccc;
 }
+
+
+
+
+

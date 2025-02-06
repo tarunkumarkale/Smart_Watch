@@ -17,7 +17,7 @@ const FeaturesData = [
     {
         icon: CiMicrophoneOn,
         title: "Voice Control",
-        des: "Control your smart watch effortlessly using voice commands."
+        des: "Control your smart watch effortlessly with just a voice command, making your experience seamless and hands-free"
     },
     {
         icon: CiBluetooth,
